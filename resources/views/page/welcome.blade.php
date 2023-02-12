@@ -3,111 +3,7 @@
 @section('title', 'Silikit')
 
 @section('content')
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-dark-grayscale">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR>
-                <feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG>
-                <feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-grayscale">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0 1"></feFuncR>
-                <feFuncG type="table" tableValues="0 1"></feFuncG>
-                <feFuncB type="table" tableValues="0 1"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-purple-yellow">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR>
-                <feFuncG type="table" tableValues="0 1"></feFuncG>
-                <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-blue-red">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0 1"></feFuncR>
-                <feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG>
-                <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-midnight">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0 0"></feFuncR>
-                <feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG>
-                <feFuncB type="table" tableValues="0 1"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-magenta-yellow">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR>
-                <feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG>
-                <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-purple-green">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR>
-                <feFuncG type="table" tableValues="0 1"></feFuncG>
-                <feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-    <defs>
-        <filter id="wp-duotone-blue-orange">
-            <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix>
-            <feComponentTransfer color-interpolation-filters="sRGB">
-                <feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR>
-                <feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG>
-                <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB>
-                <feFuncA type="table" tableValues="1 1"></feFuncA>
-            </feComponentTransfer>
-            <feComposite in2="SourceGraphic" operator="in"></feComposite>
-        </filter>
-    </defs>
-</svg>
+
 <header id="masthead" class="site-header">
     <div id="header">
         <div class="container">
@@ -206,55 +102,13 @@
             </div>
         </div>
     </div>
-
 </header>
+
 <section id="slider">
-    <div id="carouselExampleIndicators" class="carousel slide  carousel-fade " data-ride="carousel" data-interval="10000">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item">
-                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/slides/slide.jpg" alt="1" title="#slidecaption1">
-                <div class="carousel-caption d-md-block mt-5">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="inner_carousel">
-                                <div class="slider-box">
-                                    <div class="prop_desc">
-                                        <p>Its All Organic &amp; Natural Here</p>
-                                    </div>
-                                    <h1 class="font-weight-bold">Organic Products <span>for a better world</span>
-                                    </h1>
-                                    <div class="slide_btn">
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="carousel-item active">
                 <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/slides/slide.jpg" alt="1" title="#slidecaption2">
-                <div class="carousel-caption d-md-block mt-5">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="inner_carousel">
-                                <div class="slider-box">
-                                    <div class="prop_desc">
-                                        <p>Its All Organic &amp; Natural Here</p>
-                                    </div>
-                                    <h1 class="font-weight-bold">Organic Products <span>for a better world</span>
-                                    </h1>
-                                    <div class="slide_btn">
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/slides/slide.jpg" alt="1" title="#slidecaption3">
                 <div class="carousel-caption d-md-block mt-5">
                     <div class="container h-100">
                         <div class="row h-100">
@@ -277,6 +131,105 @@
         </div>
     </div>
     <div class="clearfix"></div>
+</section>
+
+<section id="service">
+    <div class="container">
+        <div class="row">
+            <div class="owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="box">
+                                <div class="row">
+                                    <div class="col-lg-3 col-4">
+                                        <div class="service_icon">
+                                            <img src="{{ asset('img/icon1.png') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-8">
+                                        <h5 class="title pb-0">Orignal Products</h5>
+                                        <p class="post">Dolor sit amet, consectetur adipisicing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="box">
+                                <div class="row">
+                                    <div class="col-lg-3 col-4">
+                                        <div class="service_icon">
+                                            <img src="{{ asset('img/icon2.png') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-8">
+                                        <h5 class="title pb-0">Secure Payment</h5>
+                                        <p class="post">Dolor sit amet, consectetur adipisicing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="box">
+                                <div class="row">
+                                    <div class="col-lg-3 col-4">
+                                        <div class="service_icon">
+                                            <img src="{{ asset('img/icon3.png') }}" width="auto">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-8">
+                                        <h5 class="title pb-0">Orignal Products</h5>
+                                        <p class="post">Dolor sit amet, consectetur adipisicing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav disabled"><button role="presentation" class="owl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button><button role="presentation" class="owl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></div>
+                <div class="owl-dots disabled"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="featured_product">
+    <div class="container">
+        <div class="featured_product_head text-center">
+            <h3 class="pb-0 m-0 heading">
+                Featured Products </h3>
+            <img src="{{ asset('img/title_line.png') }}">
+        </div>
+        <div class="owl-carousel mt-5 owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item" style="width: 445px; margin-right: 10px;">
+                        <div class="featured_product_content">
+                            <img width="300" height="213" src="https://www.ovationthemes.com/demos/organic-farm/wp-content/uploads/sites/9/2021/01/featured_product-2-300x213.png" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" loading="lazy">
+                            <span class="custom-field">15%-off</span>
+                            <div class="row content_pad">
+                                <div class="col-lg-8 col-8 pt-2">
+                                    <h5 class="p-0"><a href="https://www.ovationthemes.com/demos/organic-farm/product/product-title-here-15/">Product Title Here</a></h5>
+                                    <p class="mb-0">vegetable
+                                        <span><i class="fas fa-star"></i>5.00</span>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-4 text-center pt-2 d-flex justify-content-center align-items-center">
+                                    <span><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>59</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">£</span>49</bdi></span></ins></span>
+                                </div>
+                            </div>
+                            <div class="featured_product_btn">
+                                <a href="https://www.ovationthemes.com/demos/organic-farm/product/product-title-here-15/"><i class="fas fa-cart-plus"></i>
+                                    Add to Cart </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav"><button role="presentation" class="owl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button><button role="presentation" class="owl-next disabled"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></div>
+            <div class="owl-dots disabled"></div>
+        </div>
+    </div>
 </section>
 
 <section id="category" style="background-image:url('https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/category/category_bg.jpg')">
@@ -388,75 +341,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 mt-4">
-                <div class="post-slide">
-                    <div class="post-img">
-                        <img width="227" height="261" src="https://www.ovationthemes.com/demos/organic-farm/wp-content/uploads/sites/9/2021/01/latest-news3.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"> <span class="date">Jan 27 2021</span>
-                    </div>
-                    <div class="post-review">
-                        <h5 class="post-title m-0 p-0"><a href="https://www.ovationthemes.com/demos/organic-farm/2021/01/27/qui-blanditiis-praesentaiusm-voluptatum-deleniti-atque-3/">qui blanditiis praesentaiusm voluptatum deleniti atque</a> </h5>
-                        <ul>
-                            <li><span class="entry-author mr-2"><i class="far fa-user"></i><a href="https://www.ovationthemes.com/demos/organic-farm/author/admin/">admin</a></span></li>
-
-                            <li><span class="entry-comments"><i class=""></i> 0 Comments</span></li>
-
-                        </ul>
-                        <p class="post-description">
-                            Et harum quidem rerum facilis est expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi </p>
-                        <div class="latest_btn">
-                            <a href="https://www.ovationthemes.com/demos/organic-farm/2021/01/27/qui-blanditiis-praesentaiusm-voluptatum-deleniti-atque-3/">
-                                Read More<i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 mt-4">
-                <div class="post-slide">
-                    <div class="post-img">
-                        <img width="230" height="258" src="https://www.ovationthemes.com/demos/organic-farm/wp-content/uploads/sites/9/2021/01/latest-news2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"> <span class="date">Jan 27 2021</span>
-                    </div>
-                    <div class="post-review">
-                        <h5 class="post-title m-0 p-0"><a href="https://www.ovationthemes.com/demos/organic-farm/2021/01/27/qui-blanditiis-praesentaiusm-voluptatum-deleniti-atque-2/">qui blanditiis praesentaiusm voluptatum deleniti atque</a> </h5>
-                        <ul>
-                            <li><span class="entry-author mr-2"><i class="far fa-user"></i><a href="https://www.ovationthemes.com/demos/organic-farm/author/admin/">admin</a></span></li>
-
-                            <li><span class="entry-comments"><i class=""></i> 0 Comments</span></li>
-
-                        </ul>
-                        <p class="post-description">
-                            Et harum quidem rerum facilis est expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi </p>
-                        <div class="latest_btn">
-                            <a href="https://www.ovationthemes.com/demos/organic-farm/2021/01/27/qui-blanditiis-praesentaiusm-voluptatum-deleniti-atque-2/">
-                                Read More<i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 mt-4">
-                <div class="post-slide">
-                    <div class="post-img">
-                        <img width="228" height="261" src="https://www.ovationthemes.com/demos/organic-farm/wp-content/uploads/sites/9/2021/01/latest-news1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"> <span class="date">Jan 27 2021</span>
-                    </div>
-                    <div class="post-review">
-                        <h5 class="post-title m-0 p-0"><a href="https://www.ovationthemes.com/demos/organic-farm/2021/01/27/qui-blanditiis-praesentaiusm-voluptatum-deleniti-atque/">qui blanditiis praesentaiusm voluptatum deleniti atque</a> </h5>
-                        <ul>
-                            <li><span class="entry-author mr-2"><i class="far fa-user"></i><a href="https://www.ovationthemes.com/demos/organic-farm/author/admin/">admin</a></span></li>
-
-                            <li><span class="entry-comments"><i class=""></i> 0 Comments</span></li>
-
-                        </ul>
-                        <p class="post-description">
-                            Et harum quidem rerum facilis est expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi </p>
-                        <div class="latest_btn">
-                            <a href="https://www.ovationthemes.com/demos/organic-farm/2021/01/27/qui-blanditiis-praesentaiusm-voluptatum-deleniti-atque/">
-                                Read More<i class="fas fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -470,79 +354,7 @@
         </div>
         <div class="owl-carousel mt-4 owl-loaded owl-drag">
             <div class="owl-stage-outer">
-                <div class="owl-stage" style="transform: translate3d(-2240px, 0px, 0px); transition: all 0s ease 0s; width: 7840px;">
-                    <div class="owl-item cloned" style="width: 1110px; margin-right: 10px;">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/testimonial.png" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p class="description">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                                <h5 class="testimonial-title">Kavin Peterson</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 1110px; margin-right: 10px;">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/testimonial.png" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p class="description">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                                <h5 class="testimonial-title">Kavin Peterson</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item active" style="width: 1110px; margin-right: 10px;">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/testimonial.png" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p class="description">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                                <h5 class="testimonial-title">Kavin Peterson</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item" style="width: 1110px; margin-right: 10px;">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/testimonial.png" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p class="description">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                                <h5 class="testimonial-title">Kavin Peterson</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item" style="width: 1110px; margin-right: 10px;">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/testimonial.png" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p class="description">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                                <h5 class="testimonial-title">Kavin Peterson</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-item cloned" style="width: 1110px; margin-right: 10px;">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/testimonial.png" alt="">
-                            </div>
-                            <div class="testimonial-content">
-                                <p class="description">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-                                <h5 class="testimonial-title">Kavin Peterson</h5>
-                            </div>
-                        </div>
-                    </div>
+                <div class="owl-stage">
                     <div class="owl-item cloned" style="width: 1110px; margin-right: 10px;">
                         <div class="testimonial">
                             <div class="pic">
