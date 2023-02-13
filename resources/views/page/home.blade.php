@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.user')
 
-@section('title', 'Silikit')
+@section('title', 'SILI - KIT')
 
 @section('content')
 
@@ -14,7 +14,7 @@
                             <div class="row my-3">
                                 <div class="col-lg-4 col-md-3 col-sm-5 col-12">
                                     <div class="logo">
-                                        <a href="https://www.ovationthemes.com/demos/organic-farm/" class="custom-logo-link" rel="home" aria-current="page"><img width="240" height="60" src="https://www.ovationthemes.com/demos/organic-farm/wp-content/uploads/sites/9/2021/07/cropped-Organic.png" class="custom-logo" alt="Organic Farm"></a>
+                                        <a href="{{ route('homepage') }}" class="custom-logo-link" rel="home" aria-current="page"><img width="240" height="60" src="{{ asset('img/logo.png') }}" class="custom-logo" alt="SILI - KIT"></a>
                                         <div class="logo-text">
                                         </div>
                                     </div>
@@ -30,7 +30,7 @@
                                                         <div class="hi_normal"><i class="fas fa-envelope"></i></div>
                                                     </li>
                                                     <li class="title">Email Address</li>
-                                                    <li class="content">organic@gmail.com</li>
+                                                    <li class="content">silikit@gmail.com</li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-6 p-0">
@@ -39,9 +39,9 @@
                                                         <div class="hi_normal"><i class="fas fa-phone-volume"></i> </div>
                                                     </li>
                                                     <li class="title">
-                                                        24/7 In Touch </li>
+                                                        Hotline </li>
                                                     <li class="content">
-                                                        000012321545648 </li>
+                                                        0906254698 </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -108,25 +108,7 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img src="https://www.ovationthemes.com/demos/organic-farm/wp-content/themes/organic-farm-pro/assets/images/slides/slide.jpg" alt="1" title="#slidecaption2">
-                <div class="carousel-caption d-md-block mt-5">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="inner_carousel">
-                                <div class="slider-box">
-                                    <div class="prop_desc">
-                                        <p>Its All Organic &amp; Natural Here</p>
-                                    </div>
-                                    <h1 class="font-weight-bold">Organic Products <span>for a better world</span>
-                                    </h1>
-                                    <div class="slide_btn">
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="{{ asset('img/slider_1.png') }}" alt="1" title="#slide">
             </div>
         </div>
     </div>
@@ -448,7 +430,7 @@
             <div class="container footer-cols">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 footer1">
-                        <aside id="media_image-2" class="widget widget_media_image"><img width="222" height="67" src="https://www.ovationthemes.com/demos/organic-farm/wp-content/uploads/sites/9/2021/01/Organic.png" class="image wp-image-49  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;"></aside>
+                        <aside id="media_image-2" class="widget widget_media_image"><img width="222" height="67" src="{{ asset('img/logo.png') }}" class="image wp-image-49  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; max-height: 97px;"></aside>
                         <aside id="custom_html-2" class="widget_text widget widget_custom_html">
                             <div class="textwidget custom-html-widget">
                                 <p>
@@ -511,7 +493,7 @@
                 <div class="container">
                     <div class="row copy-text">
                         <div class="col-lg-12 col-md-12">
-                            <p>Wordpress Theme 2020<span class="credit_link"> Design &amp; Developed by<a href="https://www.ovationthemes.com/" target="_blank"> Ovation Themes</a></span></p>
+                            <p>Copyright ©<span class="credit_link"> by<a href="{{ route('homepage') }}" target="_blank"> SILI - KIT</a></span></p>
                         </div>
                         <a href="javascript:" id="return-to-top" style="display: none;"><i class="fas fa-angle-double-up"></i></a>
                     </div>
@@ -520,16 +502,16 @@
         </div>
     </div>
 </div>
-<div class="mtsnb mtsnb-shown mtsnb-top mtsnb-absolute" id="mtsnb-71" data-mtsnb-id="71" style="background-color:#27bc34;color:#ffffff;">
+
+<div class="mtsnb mtsnb-shown mtsnb-top mtsnb-absolute" id="mtsnb-71" data-mtsnb-id="71" style="background-color:#27bc34;color:#ffffff; position: fixed">
     <div class="mtsnb-container-outer">
         <div class="mtsnb-container mtsnb-clearfix">
             <div class="mtsnb-custom-type mtsnb-content">
-                <div class="mtsnb-custom-content">Get Organic WordPress Theme <a class="m-3 px-3 py-1 bg-white rounded second-btn" style="color:#27bc34;background:#fff" href="https://www.ovationthemes.com/wordpress/organic-farm-wordpress-theme/?add-to-cart=5994" rel="noopener" target="_blank">Buy Now</a> Or Try Our WordPress Bundle - For $89 <span class="d-block d-lg-inline-block mt-3 mt-lg-0"><a class="m-3 px-3 py-1 bg-white rounded" style="color:#27bc34;background:#fff" href="https://www.ovationthemes.com/wordpress/wordpress-bundle/" rel="noopener" target="_blank">Get It Now</a></span>
+                <div class="mtsnb-custom-content">Get Double Sale Off <a class="m-3 px-3 py-1 bg-white rounded" style="color:#27bc34;background:#fff" href="tel:0906254698" rel="noopener" target="_blank">Contact Now</a>
                     <span class="d-block d-lg-inline-block mt-3 mt-lg-0"></span>
                 </div>
             </div>
         </div>
-        <a href="#" class="mtsnb-hide" style="background-color:#27bc34;color:#ffffff;"><span>+</span></a>
     </div>
 </div>
 
