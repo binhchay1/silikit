@@ -152,7 +152,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => '/admin/dashboard',
+    'dashboard_url' => '/dashboard',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => false,
@@ -181,63 +181,8 @@ return [
     'menu' => [
         [
             'text'  => 'Trang chính',
-            'route' => 'admin.home',
+            'route' => 'dashboard',
             'icon'  => 'nav-icon fas fa-chart-line',
-            'can' => 'admin'
-        ],
-        [
-            'text'  => 'Tài khoản',
-            'route' => 'admin.users.index',
-            'icon'  => 'nav-icon fas fa-users',
-            'can' => 'admin'
-        ],
-        [
-            'text'  => 'Sản phẩm',
-            'route' => 'admin.products.index',
-            'icon'  => 'nav-icon fas fa-cart-arrow-down',
-            'can' => 'admin'
-        ],
-        [
-            'text'  => 'Lịch hẹn',
-            'route' => 'admin.schedule.index',
-            'icon'  => 'nav-icon fas fa-calendar-alt',
-            'can' => 'doctor'
-        ],
-        [
-            'text'  => 'Kho hàng',
-            'route' => 'admin.storage.index',
-            'icon'  => 'nav-icon fas fa-archive',
-            'can' => 'employee'
-        ],
-        [
-            'text'  => 'Đơn hàng',
-            'route' => 'admin.order.index',
-            'icon'  => 'nav-icon fas fa-dolly',
-            'can' => 'admin'
-        ],
-        [
-            'text'  => 'Đơn hàng',
-            'route' => 'admin.order.index',
-            'icon'  => 'nav-icon fas fa-dolly',
-            'can' => 'employee'
-        ],
-        [
-            'text'  => 'Giảm giá',
-            'route' => 'admin.promotion.index',
-            'icon'  => 'nav-icon fas fa-bullhorn',
-            'can' => 'admin'
-        ],
-        [
-            'text'  => 'Dịch vụ',
-            'route' => 'admin.service.index',
-            'icon'  => 'nav-icon fas fa-briefcase',
-            'can' => 'admin'
-        ],
-        [
-            'text'  => 'Khám bệnh',
-            'route' => 'admin.doctor.index',
-            'icon'  => 'nav-icon fas fa-hospital-user',
-            'can' => 'doctor'
         ],
         [
             'type'         => 'fullscreen-widget',

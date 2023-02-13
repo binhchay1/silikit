@@ -1,13 +1,12 @@
 @extends('layouts.adminlte-custom')
 
-@section('title', 'Diamond Pet')
+@section('title', 'SILI - KIT')
 
 @section('content_header')
 <h1 class="m-0 text-dark">Trang chính</h1>
 @stop
 
 @section('content')
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -73,7 +72,7 @@
             <div class="col-lg-6">
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title text-white">Doanh thu bác sĩ theo <span id="date-card-text"></span></h3>
+                        <h3 class="card-title text-white">Doanh thu theo <span id="date-card-text"></span></h3>
                         <div class="card-tools d-flex">
                             <div class="dropdown">
                                 <button type="button" class="btn btn-tool" data-date-format="yyyy" id="yearPicker">
@@ -109,16 +108,13 @@
             <div class="col-lg-6">
                 <div class="card card-success">
                     <div class="card-header border-0">
-                        <h3 class="card-title">Danh sách lịch khám trong tháng </h3>
+                        <h3 class="card-title">Danh sách trong tháng </h3>
                     </div>
                     <div class="card-body table-responsive p-0" style="overflow-y:auto;" id="table-scroll-schedule">
                         <table class="table table-striped table-valign-middle">
                             <thead>
                                 <tr>
-                                    <th>Tên khách hàng</th>
-                                    <th>Tên bác sĩ</th>
-                                    <th>Thời gian</th>
-                                    <th>Trạng Thái</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -131,3 +127,4 @@
         </div>
     </div>
 </div>
+@stop
