@@ -2,12 +2,12 @@
 
 namespace App\Repositories;
 
-use App\Models\Product;
+use App\Models\Blog;
 
 /**
- * Class ProductRepository.
+ * Class BlogRepository.
  */
-class ProductRepository extends BaseRepository
+class BlogRepository extends BaseRepository
 {
 
     /**
@@ -16,17 +16,17 @@ class ProductRepository extends BaseRepository
      */
     public function model()
     {
-        return Product::class;
+        return Blog::class;
     }
 
     public function destroy($id)
     {
-        return Product::where('id', $id)->delete();
+        return Blog::where('id', $id)->delete();
     }
 
     public function create(array $data)
     {
-        return Product::create($data);
+        return Blog::create($data);
     }
 
     public function show($id)
@@ -36,22 +36,22 @@ class ProductRepository extends BaseRepository
         require $query->where('id', $id)->get();
     }
 
-    public function getListProduct($filter = [])
+    public function getListBlog($filter = [])
     {
         $query = $this->model->query();
 
         $limit = isset($filter['limit']) ? (int) $filter['limit'] : config('paginate.limit-default');
 
-        if (isset($filter['name'])) {
-            $query = $query->where('products.name', 'like', '%' . $filter['name'] . '%');
+        if (isset($filter['title'])) {
+            $query = $query->where('title', 'like', '%' . $filter['title'] . '%');
         }
 
         if (isset($filter['description'])) {
-            $query = $query->where('products.description', 'like', '%' . $filter['description'] . '%');
+            $query = $query->where('description', 'like', '%' . $filter['description'] . '%');
         }
 
-        if (isset($filter['type'])) {
-            $query = $query->where('products.type', 'like', '%' . $filter['type'] . '%');
+        if (isset($filter['author'])) {
+            $query = $query->where('author', 'like', '%' . $filter['author'] . '%');
         }
 
         $query = $query->orderBy('id', 'DESC');

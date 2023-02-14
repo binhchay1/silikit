@@ -185,6 +185,16 @@ return [
             'icon'  => 'nav-icon fas fa-chart-line',
         ],
         [
+            'text'  => 'Sản phẩm',
+            'route' => 'admin.products.index',
+            'icon'  => 'nav-icon fas fa-warehouse',
+        ],
+        [
+            'text'  => 'Bài viết',
+            'route' => 'admin.blog.index',
+            'icon'  => 'nav-icon fas fa-blog',
+        ],
+        [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],

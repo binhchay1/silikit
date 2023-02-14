@@ -16,6 +16,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@ckeditor/ckeditor5-style": "^36.0.1",
         "admin-lte": "^3.0.0-alpha.2",
         "sweetalert2": "^11.4.8"
     }

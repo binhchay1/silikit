@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +23,23 @@ Route::get('/', [HomeController::class, 'viewHome'])->name('homepage');
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [AdminController::class, 'viewDashBoard'])->name('dashboard');
 
-    Route::get('/product', [ProductController::class, 'viewProduct'])->name('product');
-    Route::get('/product/update', [ProductController::class, 'update'])->name('product.update');
-    Route::get('/profile/delete', [ProductController::class, 'delete'])->name('product.delete');
+    Route::group(['prefix' => 'product'], function () {
+        Route::get('/', [ProductController::class, 'listProductAdmin'])->name('admin.products.index');
+        Route::get('/add', [ProductController::class, 'createProduct'])->name('admin.create.products');
+        Route::get('/update/{product}', [ProductController::class, 'viewUpdateProduct'])->name('admin.update.products.view');
+        Route::post('/update/{product}', [ProductController::class, 'updateProduct'])->name('admin.update.products');
+        Route::post('/store', [ProductController::class, 'storeProduct'])->name('admin.store.products');
+        Route::get('/delete/{id}', [ProductController::class, 'deleteProduct'])->name('admin.delete.products');
+    });
+
+    Route::group(['prefix' => 'blog'], function () {
+        Route::get('/', [BlogController::class, 'listBlogAdmin'])->name('admin.blog.index');
+        Route::get('/add', [BlogController::class, 'createBlog'])->name('admin.create.blog');
+        Route::post('/store', [BlogController::class, 'storeBlog'])->name('admin.store.blog');
+        Route::get('/update/{product}', [BlogController::class, 'viewUpdateBlog'])->name('admin.update.blog.view');
+        Route::post('/update/{product}', [BlogController::class, 'updateBlog'])->name('admin.update.blog');
+        Route::get('/delete/{id}', [BlogController::class, 'deleteBlog'])->name('admin.delete.blog');
+    });
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
