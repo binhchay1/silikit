@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Repositories\ProductRepository;
 use App\Repositories\BlogRepository;
 use Illuminate\Support\Str as Str;
