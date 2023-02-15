@@ -38,7 +38,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Gía</label>
                         <div class="col-sm-10 col-form-input">
-                            <input type="text" onkeypress="return /[0-9]/i.test(event.key)" name="price" value="{{ old('price') }}" class="form-control" style="width: 40%;">
+                            <input type="text" onkeypress="return /[0-9]/i.test(event.key)" name="price" value="{{ number_format(old('price'), 0, '', ',') }}" class="form-control" style="width: 40%;">
                             @if ($errors->has('price'))
                             <p class="help is-danger" style="color: red;">{{ $errors->first('price') }}</p>
                             @endif
@@ -47,7 +47,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Ảnh</label>
                         <div class="col-sm-10 col-form-input">
-                        <img src="{{ asset('img/preview.png') }}" id="previewImg" class="p-0 logo-preview" alt="100x40" style="min-width: 100px; max-height: 100px;" />
+                            <img src="{{ asset('img/preview.png') }}" id="previewImg" class="p-0 logo-preview" alt="100x40" style="min-width: 100px; max-height: 100px;" />
                             <input type="file" class="form-control input-image-preview" name="img" onchange="previewFile(this)">
                             @if ($errors->has('img'))
                             <p class="help is-danger" style="color: red;">{{ $errors->first('img') }}</p>

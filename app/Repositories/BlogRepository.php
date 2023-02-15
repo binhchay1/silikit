@@ -59,8 +59,21 @@ class BlogRepository extends BaseRepository
         return $query->paginate($limit);
     }
 
-    public function getAll()
+    public function getBlogByTitle($title)
     {
-        return $this->model->query()->get();
+        $query = $this->model->query();
+
+        $query = $query->where('title', $title);
+
+        return $query->first();
+    }
+
+    public function getListBlogExpectTitle($title)
+    {
+        $query = $this->model->query();
+
+        $query = $query->where('title', '!=', $title);
+
+        return $query->get();
     }
 }

@@ -56,7 +56,7 @@
                                 {{ (($blog->currentPage() - 1) * $blog->perPage()) + $loop->iteration }}
                             </td>
                             <td>{{ $item->title }}</td>
-                            <td>{{ $item->description }}</td>
+                            <td>{!! $item->description !!}</td>
                             <td>{{ $item->author }}</td>
                             <td>
                                 <img src="{{ url($item->image) }}" width="150" height="100">

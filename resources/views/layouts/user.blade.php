@@ -42,13 +42,196 @@
     @yield('style')
 </head>
 
-<body class="home page-template page-template-page-template page-template-home-page page-template-page-templatehome-page-php page page-id-9 wp-custom-logo theme-organic-farm-pro woocommerce-js has-mtsnb" style="padding-top: 41px;">
+<body>
     <div id="app">
         <main id="wa-body">
+            <header id="masthead" class="site-header">
+                <div id="header">
+                    <div class="container">
+                        <div class="header-wrap">
+                            <div id="topbar">
+                                <div class="topbar_section">
+                                    <div class="container">
+                                        <div class="row my-3">
+                                            <div class="col-lg-4 col-md-3 col-sm-5 col-12">
+                                                <div class="logo">
+                                                    <a href="{{ route('homepage') }}" class="custom-logo-link" rel="home" aria-current="page"><img width="240" height="60" src="{{ asset('img/logo.png') }}" class="custom-logo" alt="SILI - KIT"></a>
+                                                    <div class="logo-text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-7 col-12">
+                                                <div class="topbar-content">
+                                                    <div class="row">
+                                                        <div class="col-md-0 col-0">
+                                                        </div>
+                                                        <div class="col-md-6 p-0">
+                                                            <ul class="right-side-content">
+                                                                <li class="icon">
+                                                                    <div class="hi_normal"><i class="fas fa-envelope"></i></div>
+                                                                </li>
+                                                                <li class="title">Email Address</li>
+                                                                <li class="content">silikit@gmail.com</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6 p-0">
+                                                            <ul class="right-side-content">
+                                                                <li class="icon">
+                                                                    <div class="hi_normal"><i class="fas fa-phone-volume"></i> </div>
+                                                                </li>
+                                                                <li class="title">
+                                                                    Hotline </li>
+                                                                <li class="content">
+                                                                    0906254698 </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-sm-12 col-12 social">
+                                                <div class="socialbox">
+                                                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter align-middle" aria-hidden="true"></i></a>
+                                                    <a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f align-middle " aria-hidden="true"></i></a>
+                                                    <a class="youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube align-middle" aria-hidden="true"></i></a>
+                                                    <a class="pintrest" href="https://in.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p align-middle " aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="container nav_wrap">
+                                <div class="main-header-box">
+                                    <div class="row bg-media">
+                                        <div class="col-lg-9 offset-lg-1 col-md-9 col-sm-8 col-4 header-nav">
+                                            <div class="menubar m-0 mt-md-0">
+                                                <div class="container right_menu">
+                                                    <div class="innermenubox ">
+                                                        <div class="toggle-nav mobile-menu">
+                                                            <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+                                                        </div>
+                                                        <div id="mySidenav" class="nav sidenav">
+                                                            <nav id="site-navigation" class="main-navigation">
+                                                                <a href="javascript:void(0)" class="closebtn mobile-menu" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                                                                <div class="menu clearfix">
+                                                                    <ul id="menu-primary-menu" class="clearfix mobile_nav sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                                                                        <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-63"><a href="{{ route('homepage') }}" aria-current="page">Home</a></li>
+                                                                        <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="{{ route('homepage') }}">Blog</a></li>
+                                                                        <li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="{{ route('homepage') }}">Product</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 header_btn">
+                                            <div class="">
+                                                <a target="_blank" href="https://www.ovationthemes.com/wordpress/organic-farm-wordpress-theme/?add-to-cart=5994" class="">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
             @yield('content')
+            <div class="mtsnb mtsnb-shown mtsnb-top mtsnb-absolute" id="mtsnb-71" data-mtsnb-id="71" style="background-color:#27bc34;color:#ffffff; position: fixed">
+                <div class="mtsnb-container-outer">
+                    <div class="mtsnb-container mtsnb-clearfix">
+                        <div class="mtsnb-custom-type mtsnb-content">
+                            <div class="mtsnb-custom-content">Get Double Sale Off <a class="m-3 px-3 py-1 bg-white rounded" style="color:#27bc34;background:#fff" href="tel:0906254698" rel="noopener" target="_blank">Contact Now</a>
+                                <span class="d-block d-lg-inline-block mt-3 mt-lg-0"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-footer">
+                <div id="footer">
+                    <div id="footer_box" class="darkbox">
+                        <div class="container footer-cols">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6 footer1">
+                                    <aside id="media_image-2" class="widget widget_media_image"><img width="222" height="67" src="{{ asset('img/logo.png') }}" class="image wp-image-49  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; max-height: 97px;"></aside>
+                                    <aside id="custom_html-2" class="widget_text widget widget_custom_html">
+                                        <div class="textwidget custom-html-widget">
+                                            <p>
+                                                culpa qui officia deserunt mollitia
+                                                animi, id est laborum et dolorum fuga.
+                                                Et harum quidem rerum facilis est et
+                                                expedita distinctio.
+                                            </p>
+                                            <div class="socialbox">
+                                                <a class="twitter" href="#" target="_blank" rel="noopener"><i class="fab fa-twitter align-middle"></i><span class="screen-reader-text">twitter</span></a>
+                                                <a class="insta" href="#" target="_blank" rel="noopener"><i class="fab fa-instagram align-middle"></i><span class="screen-reader-text">Instagram</span></a>
+                                                <a class="facebook" href="#" target="_blank" rel="noopener"><i class="fab fa-facebook-f align-middle "></i><span class="screen-reader-text">facebook</span></a>
+                                                <a class="youtube" href="#" target="_blank" rel="noopener"><i class="fab fa-youtube align-middle"></i><span class="screen-reader-text">youtube</span></a>
+                                                <a class="linkedin" href="#" target="_blank" rel="noopener"><i class="fab fa-linkedin-in align-middle"></i><span class="screen-reader-text">linkedin</span></a>
+                                            </div>
+                                        </div>
+                                    </aside>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 footer2">
+                                    <aside id="nav_menu-2" class="widget widget_nav_menu">
+                                        <h3 class="widget-title">Useful Links</h3>
+                                        <div class="menu-footer-menu-container">
+                                            <ul id="menu-footer-menu" class="menu">
+                                                <li id="menu-item-59" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59"><a target="_blank" rel="noopener" href="https://www.ovationthemes.com/wordpress/wordpress-bundle/">WordPress Bundle</a></li>
+                                                <li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://www.ovationthemes.com/demos/organic-farm/blog/">Blog</a></li>
+                                                <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://www.ovationthemes.com/demos/organic-farm/cart/">Cart</a></li>
+                                                <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="https://www.ovationthemes.com/demos/organic-farm/shop/">Shop</a></li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 footer3">
+                                    <aside id="custom_html-3" class="widget_text widget widget_custom_html">
+                                        <h3 class="widget-title">Categories</h3>
+                                        <div class="textwidget custom-html-widget">
+                                            <ul>
+                                                <li><a href="">Fruit</a></li>
+                                                <li><a href="">Vegetable</a>Vegetable</li>
+                                                <li><a href="">Beverages</a></li>
+                                                <li><a href="">Dairy</a></li>
+                                                <li><a href="">Packed Food</a></li>
+                                                <li><a href="">Heath &amp; Fitness</a></li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <aside id="nav_menu-3" class="widget widget_nav_menu">
+                                        <h3 class="widget-title">Buy Now</h3>
+                                        <div class="menu-footer-container">
+                                            <ul id="menu-footer" class="menu">
+                                                <li id="menu-item-94" class="custom_menu menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a target="_blank" rel="noopener" href="https://www.ovationthemes.com/wordpress/organic-farm-wordpress-theme/?add-to-cart=5994">Buy Now</a></li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <div class="container">
+                                <div class="row copy-text">
+                                    <div class="col-lg-12 col-md-12">
+                                        <p>Copyright ©<span class="credit_link"> by<a href="{{ route('homepage') }}" target="_blank"> SILI - KIT</a></span></p>
+                                    </div>
+                                    <a href="javascript:" id="return-to-top" style="display: none;"><i class="fas fa-angle-double-up"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
-
     <script type="text/javascript" src="{{ asset('js/lib/jquery.min.js') }}" id="jquery-core-js"></script>
     <script type="text/javascript" src="{{ asset('js/lib/jquery-migrate.js') }}" id="jquery-migrate-js"></script>
     <script type="text/javascript" src="{{ asset('js/lib/jquery.blockUI.min.js') }}" id="jquery-blockui-js"></script>

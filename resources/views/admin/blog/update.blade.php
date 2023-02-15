@@ -16,36 +16,27 @@
 @section('content')
 @include('sweetalert::alert')
 <section class="content">
-    <form action="{{ route('admin.update.products' , $product->id) }}" method="post">
+    <form action="{{ route('admin.update.blog' , $blog->id) }}" method="post">
         @csrf
         <div class="container-fluid">
             <div class="row form-area">
                 <div class="col-md-12 form-header text-center">
-                    <h1 class="form-title fs-20 pd5">Cập nhật sản phẩm : {{ $product->name }}</h1>
+                    <h1 class="form-title fs-20 pd5">Cập nhật bài viết : {{ $blog->title }}</h1>
                 </div>
                 <div class="col-md-12 form-body">
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Tên sản phẩm</label>
+                        <label class="col-sm-2 col-form-label">Tiêu đề</label>
                         <div class="col-sm-10 col-form-input">
-                            <input type="text" name="name" value="{{ old('name', $product->name ?? null) }}" class="form-control" style="width: 40%;">
-                            @if ($errors->has('name'))
-                            <p class="help is-danger" style="color: red;">{{ $errors->first('name') }}</p>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Gía</label>
-                        <div class="col-sm-10 col-form-input">
-                            <input type="text" name="price" value="{{ old('price', $product->price ?? null) }}" class="form-control" style="width: 40%;">
-                            @if ($errors->has('price'))
-                            <p class="help is-danger" style="color: red;">{{ $errors->first('price') }}</p>
+                            <input type="text" name="title" value="{{ old('title', $blog->title ?? null) }}" class="form-control" style="width: 40%;">
+                            @if ($errors->has('title'))
+                            <p class="help is-danger" style="color: red;">{{ $errors->first('title') }}</p>
                             @endif
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Ảnh</label>
                         <div class="col-sm-10 col-form-input">
-                            @if($product->image)
+                            @if($blog->image)
                             <img id="previewImg" class="logo-preview" src="{{ URL::to($blog->image) }}">
                             @else
                             <img src="{{ asset('img/preview.png') }}" id="previewImg" class="p-0 logo-preview" alt="100x40" style="min-width: 100px; max-height: 100px;" />
@@ -56,27 +47,40 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Nội dung</label>
                         <div class="col-sm-10 col-form-input">
-                            <textarea name="description" class="form-control" style="width: 40%;">{{ old('description', $product->description ?? null) }}</textarea>
+                            <textarea name="description" id="editor"></textarea>
                             @if ($errors->has('description'))
                             <p class="help is-danger" style="color: red;">{{ $errors->first('description') }}</p>
                             @endif
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Loại</label>
-                        <div class="col-sm-10 col-form-input">
-                            <input type="text" name="type" value="{{ old('type', $product->type ?? null) }}" class="form-control" style="width: 40%;">
-                            @if ($errors->has('type'))
-                            <p class="help is-danger" style="color: red;">{{ $errors->first('type') }}</p>
-                            @endif
-                        </div>
-                    </div>
                 </div>
                 <div class="col-sm-12 form-footer pd20 d-inline-block text-right">
-                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                    <button type="submit" class="btn btn-primary" id="submit">Cập nhật</button>
                 </div>
             </div>
         </div>
     </form>
 </section>
+<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+<script>
+    let editor;
+    let blog = <?php echo json_encode($blog); ?>
+
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .then(newEditor => {
+            window.editor = newEditor;
+            editor = newEditor;
+            editor.setData(blog.description);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+    document.querySelector('#submit').addEventListener('click', () => {
+        const editorData = editor.getData();
+        var textArea = document.getElementById('editor');
+        textArea.innerHTML = editorData;
+    });
+</script>
 @stop

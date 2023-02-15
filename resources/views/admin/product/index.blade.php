@@ -57,7 +57,7 @@
                                 {{ (($product->currentPage() - 1) * $product->perPage()) + $loop->iteration }}
                             </td>
                             <td>{{ $item->name }}</td>
-                            <td>{{ number_format($item->price, 2) }} VNĐ</td>
+                            <td>{{ number_format($item->price, 0, '', ',') }} VNĐ</td>
                             <td>
                                 <img src="{{ url($item->image) }}" width="150" height="100">
                             </td>

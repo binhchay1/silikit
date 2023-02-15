@@ -36,7 +36,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Gía</label>
                         <div class="col-sm-10 col-form-input">
-                            <input type="text" name="price" value="{{ old('price', $product->price ?? null) }}" class="form-control" style="width: 40%;">
+                            <input type="text" name="price" value="{{ number_format(old('price', $product->price ?? null), 0, '', ',') }}" class="form-control" style="width: 40%;">
                             @if ($errors->has('price'))
                             <p class="help is-danger" style="color: red;">{{ $errors->first('price') }}</p>
                             @endif

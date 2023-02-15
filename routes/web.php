@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'viewHome'])->name('homepage');
+Route::get('/product-detail/{name}', [HomeController::class, 'detailProduct'])->name('detail.product');
+Route::get('/blog-detail/{title}', [HomeController::class, 'detailBlog'])->name('detail.blog');
+Route::get('/product-list', [HomeController::class, 'listProduct'])->name('product');
+Route::get('/blog-list', [HomeController::class, 'listBlog'])->name('blog');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [AdminController::class, 'viewDashBoard'])->name('dashboard');
@@ -36,8 +40,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/', [BlogController::class, 'listBlogAdmin'])->name('admin.blog.index');
         Route::get('/add', [BlogController::class, 'createBlog'])->name('admin.create.blog');
         Route::post('/store', [BlogController::class, 'storeBlog'])->name('admin.store.blog');
-        Route::get('/update/{product}', [BlogController::class, 'viewUpdateBlog'])->name('admin.update.blog.view');
-        Route::post('/update/{product}', [BlogController::class, 'updateBlog'])->name('admin.update.blog');
+        Route::get('/update/{blog}', [BlogController::class, 'viewUpdateBlog'])->name('admin.update.blog.view');
+        Route::post('/update/{blog}', [BlogController::class, 'updateBlog'])->name('admin.update.blog');
         Route::get('/delete/{id}', [BlogController::class, 'deleteBlog'])->name('admin.delete.blog');
     });
 

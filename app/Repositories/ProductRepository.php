@@ -43,15 +43,15 @@ class ProductRepository extends BaseRepository
         $limit = isset($filter['limit']) ? (int) $filter['limit'] : config('paginate.limit-default');
 
         if (isset($filter['name'])) {
-            $query = $query->where('products.name', 'like', '%' . $filter['name'] . '%');
+            $query = $query->where('name', 'like', '%' . $filter['name'] . '%');
         }
 
         if (isset($filter['description'])) {
-            $query = $query->where('products.description', 'like', '%' . $filter['description'] . '%');
+            $query = $query->where('description', 'like', '%' . $filter['description'] . '%');
         }
 
         if (isset($filter['type'])) {
-            $query = $query->where('products.type', 'like', '%' . $filter['type'] . '%');
+            $query = $query->where('type', 'like', '%' . $filter['type'] . '%');
         }
 
         $query = $query->orderBy('id', 'DESC');
@@ -59,8 +59,21 @@ class ProductRepository extends BaseRepository
         return $query->paginate($limit);
     }
 
-    public function getAll()
+    public function getProductByName($name)
     {
-        return $this->model->query()->get();
+        $query = $this->model->query();
+
+        $query = $query->where('name', $name);
+
+        return $query->first();
+    }
+
+    public function getListProductExpectName($name)
+    {
+        $query = $this->model->query();
+
+        $query = $query->where('name', '!=', $name);
+
+        return $query->get();
     }
 }
